@@ -28,7 +28,7 @@ function reservarAssento(assentos, linha, coluna) {
 function haAssentosDisponiveis(assentos) {
     for (let i = 0; i < assentos.length; i++) {
         for (let j = 0; j < assentos[i].length; j++) {
-            if (assentos[i][j] === 'L') { // Corrigido para 'L'
+            if (assentos[i][j] === 'L') {
                 return true;
             }
         }
@@ -43,14 +43,15 @@ let assentos = [
     ['L', 'L', 'L', 'L']
 ];
 
+console.clear(); // Limpa a tela antes de mostrar o mapa atualizado
 exibirMapaAssentos(assentos);
+
 
 while (haAssentosDisponiveis(assentos)) {
     let assentoValido = false;
     while (!assentoValido) {
-        console.clear(); // Limpa a tela antes de mostrar o mapa atualizado
-        exibirMapaAssentos(assentos);
 
+        exibirMapaAssentos(assentos);
         // Solicitar ao usuário a seleção do assento
         let input = readline.question('Selecione seu assento (Exemplo: A1, B2): ').toUpperCase();
         let linha = input.charCodeAt(0) - 65;
