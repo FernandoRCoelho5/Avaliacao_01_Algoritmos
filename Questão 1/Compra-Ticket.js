@@ -1,4 +1,4 @@
-// Compra de Ticket Cinema com seleção de local 4x4
+// Compra de Ticket Cinema
 
 const readline = require('readline-sync');
 
@@ -52,7 +52,7 @@ while (haAssentosDisponiveis(assentos)) {
         exibirMapaAssentos(assentos);
 
         // Solicitar ao usuário a seleção do assento
-        let input = readline.question('Selecione seu assento (ex: A1, B3): ').toUpperCase();
+        let input = readline.question('Selecione seu assento (Exemplo: A1, B2): ').toUpperCase();
         let linha = input.charCodeAt(0) - 65;
         let coluna = parseInt(input[1]) - 1;
 
@@ -68,7 +68,6 @@ while (haAssentosDisponiveis(assentos)) {
         } else {
             console.log('Entrada inválida. Por favor, selecione um assento válido (ex: A1, B3).');
         }
-        // exibirMapaAssentos(assentos); // Removido daqui, pois já está sendo exibido após limpar a tela
     }
 }
 

@@ -1,5 +1,4 @@
 //Algoritmo para o usuario informar os valores de um array multidimensional 3x3
-//Exibir o array em formato de tabela e opções de operações
 
 const readline = require('readline-sync');
 
