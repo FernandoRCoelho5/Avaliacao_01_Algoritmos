@@ -48,7 +48,9 @@ exibirMapaAssentos(assentos);
 while (haAssentosDisponiveis(assentos)) {
     let assentoValido = false;
     while (!assentoValido) {
-        
+        console.clear(); // Limpa a tela antes de mostrar o mapa atualizado
+        exibirMapaAssentos(assentos);
+
         // Solicitar ao usuário a seleção do assento
         let input = readline.question('Selecione seu assento (ex: A1, B3): ').toUpperCase();
         let linha = input.charCodeAt(0) - 65;
@@ -66,7 +68,7 @@ while (haAssentosDisponiveis(assentos)) {
         } else {
             console.log('Entrada inválida. Por favor, selecione um assento válido (ex: A1, B3).');
         }
-        exibirMapaAssentos(assentos);
+        // exibirMapaAssentos(assentos); // Removido daqui, pois já está sendo exibido após limpar a tela
     }
 }
 
