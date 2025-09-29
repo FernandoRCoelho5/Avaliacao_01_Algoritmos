@@ -1,0 +1,19 @@
+{
+  "name": "avaliacao_01_algoritmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoRCoelho5/Avaliacao_01_Algoritmos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoRCoelho5/Avaliacao_01_Algoritmos/issues"
+  },
+  "homepage": "https://github.com/FernandoRCoelho5/Avaliacao_01_Algoritmos#readme"
+}
